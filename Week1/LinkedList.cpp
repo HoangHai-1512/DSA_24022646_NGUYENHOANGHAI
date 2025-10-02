@@ -128,8 +128,12 @@ struct LinkedList {
             a.push_back(tmp->data);
             tmp = tmp->next;
         }
-        for (int x : a) cout << x << " ";
+        int n = a.size();
+        for (int i = n - 1; i >= 0; i--) {
+            cout << a[i] << " ";
+        }
         cout << endl;
     } // O(N)
 };
+
 
